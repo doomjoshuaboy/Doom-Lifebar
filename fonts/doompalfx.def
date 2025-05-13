@@ -1,0 +1,12 @@
+[FNT v2]
+fntversion = 2,00
+name       = "Doom_Big_Fonts_PalFX"
+author     = "DoomJoshuaBoy"
+
+[Def]
+Type    = Bitmap
+BankType = sprite
+Size    = 48,45
+Spacing = 1,1
+Offset  = 0,0
+File    = doompalfx.sff

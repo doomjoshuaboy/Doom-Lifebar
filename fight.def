@@ -1,0 +1,2157 @@
+[Info]
+name = "DooM_Lifebar (BOTTOM)"
+author = "DoomJoshuaBoy"
+localcoord = 640,480
+
+[Files]
+sff = fight.sff
+snd = fight.snd
+font1 = fonts/doompalfx.def
+font2 = fonts/doomsmallpalfx.def
+font3 = fonts/doomtimer.def
+;font4 = fonts/doom.def
+;font5 = fonts/doomsmall.def
+fightfx.sff = fightfx.sff
+fightfx.air = fightfx.air
+common.snd = common.snd
+fx1 = gofx.def
+
+;-----------------------------------------------------------
+[FightFx]
+scale = 1
+
+;-----------------------------------------------------------
+[Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+[Simul Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,1.25
+p3.value.font = 2,0,-1
+p3.value.offset = 95,15
+p3.value.text =  L:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128	
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,1.25
+p4.value.font = 2,0,1
+p4.value.offset = -95,15
+p4.value.text =  L:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Simul_3P Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,1.25
+p3.value.font = 2,0,-1
+p3.value.offset = 95,15
+p3.value.text =  L:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,1.25
+p4.value.font = 2,0,1
+p4.value.offset = -95,15
+p4.value.text =  L:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.bg0.spr = 10,5
+p5.bg0.facing = 1
+p5.bg0.scale = 1.75,1.25
+p5.value.font = 2,0,-1
+p5.value.offset = 95,15
+p5.value.text =  L:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.bg0.spr = 10,5
+p6.bg0.facing = -1
+p6.bg0.scale = 1.75,1.25
+p6.value.font = 2,0,1
+p6.value.offset = -95,15
+p6.value.text =  L:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Simul_4P Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,1.25
+p3.value.font = 2,0,-1
+p3.value.offset = 95,15
+p3.value.text =  L:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,1.25
+p4.value.font = 2,0,1
+p4.value.offset = -95,15
+p4.value.text =  L:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.bg0.spr = 10,5
+p5.bg0.facing = 1
+p5.bg0.scale = 1.75,1.25
+p5.value.font = 2,0,-1
+p5.value.offset = 95,15
+p5.value.text =  L:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.bg0.spr = 10,5
+p6.bg0.facing = -1
+p6.bg0.scale = 1.75,1.25
+p6.value.font = 2,0,1
+p6.value.offset = -95,15
+p6.value.text =  L:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos    = 203,0
+p7.bg0.spr = 10,5
+p7.bg0.facing = 1
+p7.bg0.scale = 1.75,1.25
+p7.value.font = 2,0,-1
+p7.value.offset = 95,15
+p7.value.text =  L:%p%
+p7.value.scale = 0.4,0.4
+p7.value.palfx.add = 64,-128,-128
+
+;Player 8
+p8.pos    = 437,0
+p8.bg0.spr = 10,5
+p8.bg0.facing = -1
+p8.bg0.scale = 1.75,1.25
+p8.value.font = 2,0,1
+p8.value.offset = -95,15
+p8.value.text =  L:%p%
+p8.value.scale = 0.4,0.4
+p8.value.palfx.add = -128,-128,64
+
+[Tag Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,0.75
+
+p3.value.font = 2,0,-1
+p3.value.offset = 95,20
+p3.value.text =  L:%p%
+p3.value.scale = 0.5,0.5
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,0.75
+p4.value.font = 2,0,1
+p4.value.offset = -95,20
+p4.value.text =  L:%p%
+p4.value.scale = 0.5,0.5
+p4.value.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Tag_3P Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 2
+p2.pos    = 639,42
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 0
+p2.bg1.layerno = 0
+p2.value.layerno = 0
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,0.75
+p3.value.font = 2,0,-1
+p3.value.offset = -95,20
+p3.value.text =  L:%p%
+p3.value.scale = 0.5,0.5
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,0.75
+p4.value.font = 2,0,1
+p4.value.offset = -95,20
+p4.value.text =  L:%p%
+p4.value.scale = 0.5,0.5
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.bg0.spr = 10,5
+p5.bg0.facing = 1
+p5.bg0.scale = 1.75,0.75
+p5.value.font = 2,0,-1
+p5.value.offset = 95,20
+p5.value.text =  L:%p%
+p5.value.scale = 0.5,0.5
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.bg0.spr = 10,5
+p6.bg0.facing = -1
+p6.bg0.scale = 1.75,0.75
+p6.value.font = 2,0,1
+p6.value.offset = -95,20
+p6.value.text =  L:%p%
+p6.value.scale = 0.5,0.5
+p6.value.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Tag_4P Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.layerno = 1
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.layerno = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.bg0.spr = 10,5
+p3.bg0.facing = 1
+p3.bg0.scale = 1.75,0.75
+p3.value.font = 2,0,-1
+p3.value.offset = 95,20
+p3.value.text =  L:%p%
+p3.value.scale = 0.5,0.5
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.bg0.spr = 10,5
+p4.bg0.facing = -1
+p4.bg0.scale = 1.75,0.75
+p4.value.font = 2,0,1
+p4.value.offset = -95,20
+p4.value.text =  L:%p%
+p4.value.scale = 0.5,0.5
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.bg0.spr = 10,5
+p5.bg0.facing = 1
+p5.bg0.scale = 1.75,0.75
+p5.value.font = 2,0,-1
+p5.value.offset = 95,20
+p5.value.text =  L:%p%
+p5.value.scale = 0.5,0.5
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.bg0.spr = 10,5
+p6.bg0.facing = -1
+p6.bg0.scale = 1.75,0.75
+p6.value.font = 2,0,1
+p6.value.offset = -95,20
+p6.value.text =  L:%p%
+p6.value.scale = 0.5,0.5
+p6.value.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos    = 203,0
+p7.bg0.spr = 10,5
+p7.bg0.facing = 1
+p7.bg0.scale = 1.75,0.75
+p7.value.font = 2,0,-1
+p7.value.offset = 95,20
+p7.value.text =  L:%p%
+p7.value.scale = 0.5,0.5
+p7.value.palfx.add = 64,-128,-128
+
+;Player 8
+p8.pos    = 437,0
+p8.bg0.spr = 10,5
+p8.bg0.facing = -1
+p8.bg0.scale = 1.75,0.75
+p8.value.font = 2,0,1
+p8.value.offset = -95,20
+p8.value.text =  L:%p%
+p8.value.scale = 0.5,0.5
+p8.value.palfx.add = -128,-128,64
+
+[Turns Lifebar]
+;Player 1
+p1.pos    = 1,448
+p1.bg0.spr = 10,0
+p1.bg1.spr = 10,3
+p1.bg1.scale = 0.3,0.3
+p1.bg1.offset = 60,25
+p1.value.font = 1,0,-1
+p1.value.offset = 85,15
+p1.value.text = %p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.bg0.layerno = 1
+p1.bg1.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 639,448
+p2.bg0.spr = 10,0
+p2.bg1.spr = 10,3
+p2.bg0.facing = -1
+p2.bg1.facing = 1
+p2.bg1.offset = -60,25
+p2.bg1.scale = 0.3,0.3
+p2.value.font = 1,0,-1
+p2.value.offset = -38,15
+p2.value.text = %p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.bg0.layerno = 1
+p2.bg1.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;-----------------------------------------------------------
+[Powerbar]
+;Player 1
+p1.pos    = 113,453
+p1.bg0.spr = 10,1
+p1.bg0.scale = 0.2,0.2
+p1.bg0.offset = 0,20
+p1.bg0.layerno = 1
+p1.counter.layerno = 1
+p1.counter.offset = 0,10
+p1.counter.font = 1,0, 0
+p1.counter.scale = 0.3,0.3
+p1.counter.format.rounding = 10
+p1.counter.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 527,453
+p2.bg0.spr = 10,1
+p2.bg0.scale = 0.2,0.2
+p2.bg0.offset = 0,20
+p2.bg0.layerno = 1
+p2.counter.layerno = 1
+p2.counter.offset = 0,10
+p2.counter.font = 1,0, 0
+p2.counter.scale = 0.3,0.3
+p2.counter.format.rounding = 10
+p2.counter.palfx.add = -128,-128,64
+
+; --level sounds---
+level1.snd = 1,0
+level2.snd = 1,0
+level3.snd = 1,0
+
+
+;-----------------------------------------------------------
+;Ikemen feature
+[Guardbar]
+;Player 1
+p1.pos    = 320,448
+p1.value.font = 1,0, -1
+p1.value.offset = 0,15
+p1.value.text =  G:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,448
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text =  G:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+[Simul Guardbar]
+;Player 1
+p1.pos    = 320,448
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text =  G:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1	
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,448
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text =  G:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,25
+p3.value.text =  G:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,25
+p4.value.text =  G:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+[Simul_3P Guardbar]
+;Player 1
+p1.pos    = 320,448
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text =  G:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,448
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text =  G:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,25
+p3.value.text =  G:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,25
+p4.value.text =  G:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.value.font = 2,0,-1
+p5.value.offset = 95,25
+p5.value.text =  G:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.value.font = 2,0,1
+p6.value.offset = -95,25
+p6.value.text =  G:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+[Simul_4P Guardbar]
+;Player 1
+p1.pos    = 320,448
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text =  G:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,448
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text =  G:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,25
+p3.value.text =  G:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,25
+p4.value.text =  G:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.value.font = 2,0,-1
+p5.value.offset = 95,25
+p5.value.text =  G:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.value.font = 2,0,1
+p6.value.offset = -95,25
+p6.value.text =  G:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos    = 203,0
+p7.value.font = 2,0,-1
+p7.value.offset = 95,25
+p7.value.text =  G:%p%
+p7.value.scale = 0.4,0.4
+p7.value.palfx.add = 64,-128,-128
+
+;Player 8
+p8.pos    = 437,0
+p8.value.font = 2,0,1
+p8.value.offset = -95,25
+p8.value.text =  G:%p%
+p8.value.scale = 0.4,0.4
+p8.value.palfx.add = -128,-128,64
+
+[Stunbar]
+;Player 1
+p1.pos    = 320,462
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text = S:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,462
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text = S:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+[Simul Stunbar]
+;Player 1
+p1.pos    = 320,462
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text = S:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,462
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text = S:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,35
+p3.value.text =  S:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,35
+p4.value.text =  S:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+
+[Simul_3P Stunbar]
+;Player 1
+p1.pos    = 320,462
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text = S:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,462
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text = S:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,35
+p3.value.text =  S:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,35
+p4.value.text =  S:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.value.font = 2,0,-1
+p5.value.offset = 95,35
+p5.value.text =  S:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.value.font = 2,0,1
+p6.value.offset = -95,35
+p6.value.text =  S:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+
+[Simul_4P Stunbar]
+;Player 1
+p1.pos    = 320,462
+p1.value.font = 1,0,-1
+p1.value.offset = 0,15
+p1.value.text = S:%p%
+p1.value.scale = 0.3,0.3
+p1.value.layerno = 1
+p1.value.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos    = 330,462
+p2.value.font = 1,0,1
+p2.value.offset = 0,15
+p2.value.text = S:%p%
+p2.value.scale = 0.3,0.3
+p2.value.layerno = 1
+p2.value.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos    = 1,0
+p3.value.font = 2,0,-1
+p3.value.offset = 95,35
+p3.value.text =  S:%p%
+p3.value.scale = 0.4,0.4
+p3.value.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos    = 639,0
+p4.value.font = 2,0,1
+p4.value.offset = -95,35
+p4.value.text =  S:%p%
+p4.value.scale = 0.4,0.4
+p4.value.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos    = 102,0
+p5.value.font = 2,0,-1
+p5.value.offset = 95,35
+p5.value.text =  S:%p%
+p5.value.scale = 0.4,0.4
+p5.value.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos    = 538,0
+p6.value.font = 2,0,1
+p6.value.offset = -95,35
+p6.value.text =  S:%p%
+p6.value.scale = 0.4,0.4
+p6.value.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos    = 203,0
+p7.value.font = 2,0,-1
+p7.value.offset = 95,35
+p7.value.text =  S:%p%
+p7.value.scale = 0.4,0.4
+p7.value.palfx.add = 64,-128,-128
+
+;Player 8
+p8.pos    = 437,0
+p8.value.font = 2,0,1
+p8.value.offset = -95,35
+p8.value.text =  S:%p%
+p8.value.scale = 0.4,0.4
+p8.value.palfx.add = -128,-128,64
+
+;-----------------------------------------------------------
+[Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+[Simul Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 6335,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+; Ikemen feature
+[Simul_3P Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 635,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+;Player 5
+p5.pos = 106,10
+p5.face.spr = 9000,0
+p5.face.scale = 0.5,0.5
+p5.face.facing = 1
+p5.face.offset = 1,1
+
+;Player 6
+p6.pos = 534,10
+p6.face.spr = 9000,0
+p6.face.scale = 0.5,0.5
+p6.face.facing = -1
+p6.face.offset = -1,1
+
+; Ikemen feature
+[Simul_4P Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 635,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+;Player 5
+p5.pos = 106,10
+p5.face.spr = 9000,0
+p5.face.scale = 0.5,0.5
+p5.face.facing = 1
+p5.face.offset = 1,1
+
+;Player 6
+p6.pos = 534,10
+p6.face.spr = 9000,0
+p6.face.scale = 0.5,0.5
+p6.face.facing = -1
+p6.face.offset = -1,1
+
+;Player 7
+p7.pos = 207,10
+p7.face.spr = 9000,0
+p7.face.scale = 0.5,0.5
+p7.face.facing = 1
+p7.face.offset = 1,1
+
+;Player 8
+p8.pos = 433,10
+p8.face.spr = 9000,0
+p8.face.scale = 0.5,0.5
+p8.face.facing = -1
+p8.face.offset = -1,1
+
+[Tag Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 635,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+; Ikemen feature
+[Tag_3P Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 635,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+;Player 5
+p5.pos = 106,10
+p5.face.spr = 9000,0
+p5.face.scale = 0.5,0.5
+p5.face.facing = 1
+p5.face.offset = 1,1
+
+;Player 6
+p6.pos = 534,10
+p6.face.spr = 9000,0
+p6.face.scale = 0.5,0.5
+p6.face.facing = -1
+p6.face.offset = -1,1
+
+; Ikemen feature
+[Tag_4P Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+;Player 3
+p3.pos = 5,10
+p3.face.spr = 9000,0
+p3.face.scale = 0.5,0.5
+p3.face.facing = 1
+p3.face.offset = 1,1
+
+;Player 4
+p4.pos = 635,10
+p4.face.spr = 9000,0
+p4.face.scale = 0.5,0.5
+p4.face.facing = -1
+p4.face.offset = -1,1
+
+;Player 5
+p5.pos = 106,10
+p5.face.spr = 9000,0
+p5.face.scale = 0.5,0.5
+p5.face.facing = 1
+p5.face.offset = 1,1
+
+;Player 6
+p6.pos = 534,10
+p6.face.spr = 9000,0
+p6.face.scale = 0.5,0.5
+p6.face.facing = -1
+p6.face.offset = -1,1
+
+;Player 7
+p7.pos = 207,10
+p7.face.spr = 9000,0
+p7.face.scale = 0.5,0.5
+p7.face.facing = 1
+p7.face.offset = 1,1
+
+;Player 8
+p8.pos = 433,10
+p8.face.spr = 9000,0
+p8.face.scale = 0.5,0.5
+p8.face.facing = -1
+p8.face.offset = -1,1
+
+[Turns Face]
+;Player 1
+p1.pos    = 1,439
+p1.face.spr = 9000,0
+p1.face.scale = 0.625,0.625
+p1.face.facing = 1
+p1.face.offset = 0,10
+p1.face.layerno = 1
+
+;Player 2
+p2.pos    = 639,439
+p2.face.spr = 9000,0
+p2.face.scale = 0.625,0.625
+p2.face.facing = -1
+p2.face.offset = 0,10
+p2.face.layerno = 1
+
+
+;-----------------------------------------------------------
+[Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+[Simul Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Simul_3P Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos = 102,7
+p5.name.font = 2,0, 1
+p5.name.scale = 0.35,0.35
+p5.name.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos = 538,7
+p6.name.font = 2,0, -1
+p6.name.scale = 0.35,0.35
+p6.name.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Simul_4P Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos = 102,7
+p5.name.font = 2,0, 1
+p5.name.scale = 0.35,0.35
+p5.name.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos = 538,7
+p6.name.font = 2,0, -1
+p6.name.scale = 0.35,0.35
+p6.name.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos = 203,7
+p7.name.font = 2,0, 1
+p7.name.scale = 0.35,0.35
+p7.name.palfx.add = 64,-128,-128
+
+;Player 8
+p8.pos = 437,7
+p8.name.font = 2,0, -1
+p8.name.scale = 0.35,0.35
+p8.name.palfx.add = -128,-128,64
+
+[Tag Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Tag_3P Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos = 102,7
+p5.name.font = 2,0, 1
+p5.name.scale = 0.35,0.35
+p5.name.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos = 538,7
+p6.name.font = 2,0, -1
+p6.name.scale = 0.35,0.35
+p6.name.palfx.add = -128,-128,64
+
+; Ikemen feature
+[Tag_4P Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+;Player 3
+p3.pos = 1,7
+p3.name.font = 2,0, 1
+p3.name.scale = 0.35,0.35
+p3.name.palfx.add = 64,-128,-128
+
+;Player 4
+p4.pos = 639,7
+p4.name.font = 2,0, -1
+p4.name.scale = 0.35,0.35
+p4.name.palfx.add = -128,-128,64
+
+;Player 5
+p5.pos = 102,7
+p5.name.font = 2,0, 1
+p5.name.scale = 0.35,0.35
+p5.name.palfx.add = 64,-128,-128
+
+;Player 6
+p6.pos = 538,7
+p6.name.font = 2,0, -1
+p6.name.scale = 0.35,0.35
+p6.name.palfx.add = -128,-128,64
+
+;Player 7
+p7.pos = 203,7
+p7.name.font = 2,0, 1
+p7.name.scale = 0.35,0.35
+p7.name.palfx.add = 64,-128,-128
+
+;Player 6
+p8.pos = 437,7
+p8.name.font = 2,0, -1
+p8.name.scale = 0.35,0.35
+p8.name.palfx.add = -128,-128,64
+
+[Turns Name]
+;Player 1
+p1.pos = 1,449
+p1.name.font = 1,0, 1
+p1.name.scale = 0.4,0.4
+p1.name.layerno = 1
+p1.name.palfx.add = 64,-128,-128
+
+p1.teammate.pos = 0,10
+p1.teammate.bg.offset = 0,-9
+p1.teammate.bg.spr = 10,5
+p1.teammate.bg.facing = 1
+p1.teammate.bg.layerno = -1
+p1.teammate.bg.scale = 2,0.25
+p1.teammate.name.font = 2,0, 1
+p1.teammate.name.scale = 0.4,0.4
+p1.teammate.spacing = 0,10
+p1.teammate.name.palfx.add = 64,-128,-128
+
+;Player 2
+p2.pos = 639,449
+p2.name.font = 1,0, -1
+p2.name.scale = 0.4,0.4
+p2.name.layerno = 1
+p2.name.palfx.add = -128,-128,64
+
+p2.teammate.pos = 640,10
+p2.teammate.bg.offset = 0,-9
+p2.teammate.bg.spr = 10,5
+p2.teammate.bg.facing = -1
+p2.teammate.bg.layerno = -1
+p2.teammate.bg.scale = 2,0.25
+p2.teammate.name.font = 2,0, -1
+p2.teammate.name.scale = 0.4,0.4
+p2.teammate.spacing = 0,10
+p2.teammate.name.palfx.add = -128,-128,64
+
+
+;-----------------------------------------------------------
+[Time]
+pos = 320,449
+; Uncomment the following line to use a bg component
+;bg.spr = 
+; Time count display
+counter.offset = 0,0
+counter.font = 3,0,0
+counter.scale = 0.5,0.5
+counter.layerno = 1
+; Ticks for each count
+framespercount = 60
+
+;-----------------------------------------------------------
+[Combo]
+team1.pos = 20,75         ;Coords to show
+team1.start.x = -50       ;Starting x-coords
+team1.counter.layerno = 2
+team1.counter.font = 1,0,-1
+team1.counter.scale = 0.5,0.5
+team1.counter.shake = 1   ;Set to 1 to shake count on hit
+team1.counter.time = 7	  ;Ikemen feature: length of the counter shake
+team1.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
+team1.text.layerno = 2
+; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
+team1.text.text = Rips!   ;You can use %i to show count in the text, eg "%i Hit!"
+team1.text.font = 1,0,1
+team1.text.scale = 0.5,0.5
+team1.text.offset = 3,0   ;Offset of text
+team1.text.palfx.add = 64,-128,-128
+team1.displaytime = 90    ;Time to show text
+team1.showspeed = 1      ;Ikemen feature: text showing up speed (1 = instant)
+team1.hidespeed = 20       ;Ikemen feature: text hiding speed (the larger value, the faster speed)
+
+team2.pos = 629,75        ;Coords to show
+team2.start.x = 689       ;Starting x-coords
+team2.counter.layerno = 2
+team2.counter.font = 1,0,-1
+team2.counter.scale = 0.5,0.5
+team2.counter.shake = 1   ;Set to 1 to shake count on hit
+team2.counter.time = 7    ;Ikemen feature: length of the counter shake
+team2.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
+team2.text.layerno = 2
+; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
+team2.text.text = Rips!   ;You can use %i to show count in the text, eg "%i Hit!"
+team2.text.font = 1,0,-1
+team2.text.scale = 0.5,0.5
+team2.text.offset = 6,0   ;Offset of text
+team2.text.palfx.add = -128,-128,64
+team2.displaytime = 90    ;Time to show text
+team2.showspeed = 1       ;Ikemen feature: text showing up speed (1 = instant)
+team2.hidespeed = 20       ;Ikemen feature: text hiding speed (the larger value, the faster speed)
+
+; Ikemen feature (format combo damage percentage presentation)
+format.decimal.places = 0
+format.decimal.separator = .
+
+;-----------------------------------------------------------
+; Ikemen feature
+[Action]
+team1.pos = 50,100         ;Coords to show
+team1.max = 8             ;Maximum simultaneous messages
+team1.spacing = 0,25      ;Spacing between messages
+team1.start.x = 50       ;Starting x-coords 
+team1.front.layerno = 2
+team1.front.offset = -50,0
+team1.front.scale = 0.3,0.3
+team1.displaytime = 60    ;Time to show message
+team1.showspeed = 1       ;Message showing up speed (1 = instant)
+team1.hidespeed = 20      ;Message hiding speed (the larger value, the faster speed)
+
+team2.pos = 590,100
+team2.max = 8
+team2.spacing = 0,25
+team2.start.x = 690
+team2.front.layerno = 2
+team2.front.offset = -175,0
+team2.front.scale = 0.3,0.3
+team2.displaytime = 60
+team2.showspeed = 1
+team2.hidespeed = 20
+
+
+;-----------------------------------------------------------
+[Round]
+match.wins = 2              ;Rounds needed to win a match (Ikemen feature: depreciated, this setting can be configured in in-game options)
+match.maxdrawgames = 1      ;Max number of drawgames allowed (-1 for infinite) *2001.11.01 NEW*
+start.waittime = 30         ;Time to wait before starting intro
+
+; Default position for all components
+pos = 320,240
+
+; ROUND X
+round.time = 0              ;Time to show round display
+round.default.offset = 0, 0
+round.default.anim = 10
+round.default.snd = 2,0
+; Sounds to play for each round (optional, specify up to round 9)
+round1.snd = 2,4
+round1.anim = 20
+round1.offset = 0, 0
+round2.snd = 2,5
+round2.anim = 21
+round2.offset = 0, 0
+round3.snd = 2,6
+round3.anim = 22
+round3.offset = 0, 0
+round4.anim = 23
+round4.offset = 0, 0
+round5.anim = 24
+round5.offset = 0, 0
+round6.anim = 25
+round6.offset = 0, 0
+round7.anim = 25
+round7.offset = 0, 0
+round8.anim = 26
+round8.offset = 0, 0
+round9.anim = 27
+round9.offset = 0, 0
+
+round.sndtime = 0           ;Time to play the sounds
+
+; FIGHT
+fight.time = 0              ;Time to show FIGHT component
+fight.offset = 0, 0     ;Component for FIGHT display
+fight.bg0.anim = 11
+fight.anim = 30
+fight.snd = 2,3            ;Sound to play
+fight.sndtime = 30           ;Time to play sound
+
+callfight.time = 100         ;Ikemen feature: Time to wait before starting fight
+ctrl.time = 60              ;Time players get control after starting fight
+
+; KO
+KO.time    = 0              ;Time to show KO component
+KO.offset  = 0, 0
+KO.anim   = 31
+KO.snd = 3,0
+; Double KO
+DKO.offset = 0, 0
+DKO.anim   = 32
+DKO.scale = 0.75,0.75
+DKO.snd = 3,1
+  
+; Time Over
+TO.offset  = 0,-20
+TO.font    = 1,0
+TO.text    = Time Over
+TO.palfx.add = 64,-128,-128
+TO.displaytime = 60
+KO.sndtime = 0             ;Time to play sound for KO, DKO and TO.
+
+slow.time = 60             ;Total KO slowdown length (in ticks)
+slow.fadetime = 45         ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
+slow.speed = 0.25          ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
+
+over.waittime = 60        ;Time to wait after KO before player control is stopped
+over.hittime = 10          ;Time after KO that players can still damage each other (for double KO)
+over.wintime = 60          ;Time to wait before players change to win states
+over.time = 270            ;Time to wait before round ends
+
+; Win text
+p1.win.time = 120              ;Time to wait before showing win/draw message
+p1.win.snd = 2, 2
+p1.win.offset = 0, 0
+p1.win.font = 1,0,0
+p1.win.text = %s Wins!
+p1.win.scale = 0.5,0.5
+p1.win.palfx.add = 64,64,-128
+p1.win.displaytime = 540
+
+p2.win.time = 120              ;Time to wait before showing win/draw message
+p2.win.snd = 2, 2
+p2.win.offset = 0, 0
+p2.win.font = 1,0,0
+p2.win.text = %s Wins!
+p2.win.scale = 0.5,0.5
+p2.win.palfx.add = 64,64,-128
+p2.win.displaytime = 540
+
+; 2-player win text
+p1.win2.offset = 0, 0
+p1.win2.snd = 2, 2
+p1.win2.font = 1,0
+p1.win2.text = %s and %s Wins
+p1.win2.scale = 0.5,0.5
+p1.win2.palfx.add = 64,64,-128
+p1.win2.displaytime = 540
+
+p2.win2.offset = 0, 0
+p2.win2.snd = 2, 2
+p2.win2.font = 1,0
+p2.win2.text = %s and %s Wins
+p2.win2.scale = 0.5,0.5
+p2.win2.palfx.add = 64,64,-128
+p2.win2.displaytime = 540
+
+; Ikemen feature: 3-player win text
+p1.win3.offset = 0, 0
+p1.win3.snd = 2, 2
+p1.win3.font = 1,0
+p1.win3.text = Team %s Wins!
+p1.win3.scale = 0.5,0.5
+p1.win3.palfx.add = 64,64,-128
+p1.win3.displaytime = 540
+
+p2.win3.offset = 0, 0
+p2.win3.snd = 2, 2
+p2.win3.font = 1,0
+p2.win3.text = Team %s Wins!
+p2.win3.scale = 0.5,0.5
+p2.win3.palfx.add = 64,64,-128
+p2.win3.displaytime = 540
+
+; Ikemen feature: 4-player win text
+p1.win4.offset = 0, 0
+p1.win4.snd = 2, 2
+p1.win4.font = 1,0
+p1.win4.text = Team %s Wins!
+p1.win4.scale = 0.5,0.5
+p1.win4.palfx.add = 64,64,-128
+p1.win4.displaytime = 540
+
+p2.win4.offset = 0, 0
+p2.win4.snd = 2, 2
+p2.win4.font = 1,0
+p2.win4.text = Team %s Wins!
+p2.win4.scale = 0.5,0.5
+p2.win4.palfx.add = 64,64,-128
+p2.win4.displaytime = 540
+
+; Draw text
+draw.offset = 0, 20
+draw.font = 1,0
+draw.text = Draw Game
+draw.palfx.add = -128,64,-128
+draw.displaytime = 540
+
+;Perfect
+p1.perfect.time = 120
+p1.perfect.offset = 0, 50
+p1.perfect.font = 1,0
+p1.perfect.text = Perfect!
+p1.perfect.scale = 0.5,0.5
+p1.perfect.palfx.add = -128,128,-128
+p1.perfect.displaytime = 540
+p1.perfect.snd = 2, 1
+
+p2.perfect.time = 120
+p2.perfect.offset = 0, 50
+p2.perfect.font = 1,0
+p2.perfect.text = Perfect!
+p2.perfect.scale = 0.5,0.5
+p2.perfect.palfx.add = -128,128,-128
+p2.perfect.displaytime = 540
+p2.perfect.snd = 2, 1
+
+; Fade
+fadein.time = 30           ;Ikemen feature: round start fade time (default: 30)
+fadein.col = 0, 0, 0       ;Ikemen feature: round start fade color (default: 0,0,0)
+fadeout.time = 30          ;Ikemen feature: round end fade time (default: 30, extends over.time if fadeout.time is longer)
+fadeout.col = 0, 0, 0      ;Ikemen feature: round end fade color (default: 0,0,0)
+shutter.time = 15          ;Ikemen feature: skip intro fade time (default: 15, whole anim is twice as long)
+shutter.col = 0, 0, 0      ;Ikemen feature: skip intro fade color (default: 0,0,0)
+
+;-----------------------------------------------------------
+[WinIcon]
+p1.pos = 239,450
+p2.pos = 393,450
+
+; Offset for next icon (x,y)
+p1.iconoffset = 0,10  
+p2.iconoffset = 0,10
+
+p1.bg0.spr = 11,12
+p1.bg0.scale = 0.4,0.4
+p1.bg0.layerno = 1
+p2.bg0.spr = 11,12 
+p2.bg0.scale = 0.4,0.4
+p2.bg0.layerno = 1
+; Counter text font and offset for representing wins
+p1.counter.offset = 0,10
+p1.counter.font = 2,0,0
+p1.counter.layerno = 0
+p1.counter.scale = 0.4,0.4
+p2.counter.offset = 0,10
+p2.counter.font = 2,0,0
+p2.counter.layerno = 0
+p2.counter.scale = 0.4,0.4
+; Win by normal
+p1.n.spr = 11,13
+p1.n.scale = 0.4,0.4
+p2.n.spr = 11,13
+p2.n.scale = 0.4,0.4
+p1.n.layerno = 1
+p2.n.layerno = 1
+; Win by special
+p1.s.spr = 11,13
+p1.s.scale = 0.4,0.4
+p2.s.spr = 11,13
+p2.s.scale = 0.4,0.4
+p1.s.layerno = 1
+p2.s.layerno = 1
+; Win by hyper (super)
+p1.h.spr = 11,13
+p1.h.scale = 0.4,0.4
+p2.h.spr = 11,13
+p2.h.scale = 0.4,0.4
+p1.h.layerno = 1
+p2.h.layerno = 1
+; Win by normal throw
+p1.throw.spr = 11,13
+p1.throw.scale = 0.4,0.4
+p2.throw.spr = 11,13
+p2.throw.scale = 0.4,0.4
+p1.throw.layerno = 1
+p2.throw.layerno = 1
+; Win by cheese
+p1.c.spr = 11,13
+p1.c.scale = 0.4,0.4
+p2.c.spr = 11,13
+p2.c.scale = 0.4,0.4
+p1.c.layerno = 1
+p2.c.layerno = 1
+; Win by time over
+p1.t.spr = 11,13
+p1.t.scale = 0.4,0.4
+p2.t.spr = 11,13
+p2.t.scale = 0.4,0.4
+p1.t.layerno = 1
+p2.t.layerno = 1
+; Win by suicide (here's a fun one)
+p1.suicide.spr = 11,13
+p1.suicide.scale = 0.4,0.4
+p2.suicide.spr = 11,13
+p2.suicide.scale = 0.4,0.4
+p1.suicide.layerno = 1
+p2.suicide.layerno = 1
+; Opponent beaten by his own teammate (another fun one)
+p1.teammate.spr = 11,13
+p1.teammate.scale = 0.4,0.4
+p2.teammate.spr = 11,13
+p2.teammate.scale = 0.4,0.4
+p1.teammate.layerno = 1
+p2.teammate.layerno = 1
+; Win by perfect (overlay icon)
+p1.perfect.spr = 11,13
+p1.perfect.scale = 0.4,0.4
+p2.perfect.spr = 11,13
+p2.perfect.scale = 0.4,0.4
+p1.perfect.layerno = 1
+p2.perfect.layerno = 1
+; Use icons up until this number of wins
+useiconupto = 3
+
+[AILevel]
+p1.pos = 230,470
+p2.pos = 410,470
+
+p1.text.font = 1,0,-1
+p2.text.font = 1,0,1
+
+p1.text.text = "CPU-%s"
+p2.text.text = "CPU-%s"
+p1.text.scale = 0.4,0.4
+p2.text.scale = 0.4,0.4
+
+p1.text.palfx.add = 64,-128,-128
+p2.text.palfx.add = -128,-128,64
+
+p1.text.layerno = 1
+p2.text.layerno = 1
+
+p2.enabled.arcade = 1
+p2.enabled.bossrush = 1
+p2.enabled.freebattle = 1
+p2.enabled.netplayteamcoop = 1
+p2.enabled.scorechallenge = 1
+p2.enabled.teamcoop = 1
+p2.enabled.training = 1
+p1.enabled.watch = 1
+p2.enabled.watch = 1
+p1.enabled.randomtest = 1
+p2.enabled.randomtest = 1
+
+[Score]
+p1.pos = 190,450
+p2.pos = 450,450
+
+p1.bg.spr = 10,2
+p2.bg.spr = 10,2
+
+p1.bg.scale = 0.3,0.3
+p2.bg.scale = 0.3,0.3
+
+p1.bg.offset = 0,25
+p2.bg.offset = 0,25
+
+p1.bg.layerno  = 1
+p2.bg.layerno  = 1
+
+p1.text.layerno = 1
+p2.text.layerno = 1
+
+p1.text.palfx.add = 64,-128,-128
+p2.text.palfx.add = -128,-128,64
+
+p1.text.offset = 40,13
+p2.text.offset = 40,13
+
+p1.text.font = 1,0,-1
+p2.text.font = 1,0,-1
+
+p1.text.scale = 0.3,0.3
+p2.text.scale = 0.3,0.3
+
+p1.text.text = "%s"
+p2.text.text = "%s"
+
+score.min = 0
+score.max = 999999
+
+p1.enabled.arcade = 1
+p1.enabled.bossrush = 1
+p1.enabled.freebattle = 1
+p1.enabled.netplayteamcoop = 1
+p1.enabled.scorechallenge = 1
+p1.enabled.teamcoop = 1
+p1.enabled.training = 1
+format.integer.pad = 1
+
+; Rocket Round BG 
+[Begin Action 10]
+20,1, -430,0, 40, , , 3,3
+Interpolate Offset
+20,1, 430,0, 10, , , 3,3
+-1,0, 0,0, -1
+
+; Rocket Fight BG
+[Begin Action 11]
+20,0, 0,0, 20, , , 0.001,0.001
+Interpolate Angle
+Interpolate Scale
+20,0, 0,0, 1, , , 5,5, 360
+20,2, 0,0, 10, , , 5,5
+20,3, 0,0, 10, , , 5,5
+20,4, 0,0, 10, , , 5,5
+-1,0, 0,0, -1
+
+; Round 1
+[Begin Action 20]
+11,3, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,3, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,3, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,3, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 2
+[Begin Action 21]
+11,4, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,4, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,4, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,4, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 3
+[Begin Action 22]
+11,5, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,5, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,5, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,5, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 4
+[Begin Action 23]
+11,6, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,6, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,6, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,6, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 5
+[Begin Action 24]
+11,7, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,7, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,7, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,7, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 6
+[Begin Action 25]
+11,8, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,8, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,8, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,8, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 7
+[Begin Action 26]
+11,9, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,9, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,9, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,9, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 8
+[Begin Action 27]
+11,10, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,10, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,10, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,10, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Round 9
+[Begin Action 28]
+11,11, -400,0, 20, , , 0.5,0.5
+Interpolate Scale
+Interpolate Offset
+11,11, 0,0, 20, , , 1,1, 360
+Interpolate Scale
+11,11, 0,0, 20, , , 1.5,1.5, 360
+Interpolate Angle
+Interpolate Scale
+11,11, 0,0, 20, , , 0.001,0.001
+-1,0, 0,0, -1
+
+; Fight!
+[Begin Action 30]
+11,2, 0,0, 20, , , 0.001,0.001
+Interpolate Angle
+Interpolate Scale
+11,2, 0,0, 10, , , 1,1, 360
+11,2, 0,0, 10, , AS256D0
+Interpolate Offset
+Interpolate Blend
+11,2, 0,150,20, , AS0D256
+-1,0, 0,0, -1
+
+; K.O.
+[Begin Action 31]
+11,14, 0,0, 20, , , 0,0, 360
+Interpolate Scale
+Interpolate Angle
+11,14, 0,0, 40
+Interpolate Scale
+11,14, 0,0, 20, , , 1.5,1.5
+Interpolate Scale
+11,14, 0,0, 20, , , 1.5,0
+-1,0, 0,0, -1
+
+; Double K.O.
+[Begin Action 32]
+11,15, 0,0, 20, , , 0,0, 360
+Interpolate Scale
+Interpolate Angle
+11,15, 0,0, 40
+Interpolate Scale
+11,15, 0,0, 20, , , 1.5,1.5
+Interpolate Scale
+11,15, 0,0, 20, , , 1.5,0
+-1,0, 0,0, -1
