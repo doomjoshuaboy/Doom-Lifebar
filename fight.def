@@ -1569,10 +1569,10 @@ framespercount = 60
 
 ;-----------------------------------------------------------
 [Combo]
-team1.pos = 20,75         ;Coords to show
+team1.pos = 30,75         ;Coords to show
 team1.start.x = -50       ;Starting x-coords
 team1.counter.layerno = 2
-team1.counter.font = 1,0,-1
+team1.counter.font = 1,0,1
 team1.counter.scale = 0.5,0.5
 team1.counter.shake = 1   ;Set to 1 to shake count on hit
 team1.counter.time = 7	  ;Ikemen feature: length of the counter shake
@@ -1588,7 +1588,7 @@ team1.displaytime = 90    ;Time to show text
 team1.showspeed = 1      ;Ikemen feature: text showing up speed (1 = instant)
 team1.hidespeed = 20       ;Ikemen feature: text hiding speed (the larger value, the faster speed)
 
-team2.pos = 629,75        ;Coords to show
+team2.pos = 610,75        ;Coords to show
 team2.start.x = 689       ;Starting x-coords
 team2.counter.layerno = 2
 team2.counter.font = 1,0,-1
@@ -1630,7 +1630,7 @@ team2.max = 8
 team2.spacing = 0,25
 team2.start.x = 690
 team2.front.layerno = 2
-team2.front.offset = -175,0
+team2.front.offset = 50,0
 team2.front.scale = 0.3,0.3
 team2.displaytime = 60
 team2.showspeed = 1
